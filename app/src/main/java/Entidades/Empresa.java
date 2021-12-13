@@ -1,8 +1,10 @@
 package Entidades;
 
-public abstract class Empresa {
-    private int logo;
-    private String nombreEmpresa;
+import android.os.Parcelable;
+
+public abstract class Empresa  {
+    protected int logo;
+    protected String nombreEmpresa;
 
     public int getLogo() {
         return logo;
