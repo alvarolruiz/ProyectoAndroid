@@ -23,7 +23,7 @@ EditText etTelefonos;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detalles_empresa);
         Intent i = getIntent();
-        EmpresaTecnologica empresa =(EmpresaTecnologica) i.getParcelableExtra("Empresa");
+            EmpresaTecnologica empresa =(EmpresaTecnologica) i.getParcelableExtra("Empresa");
         declararElementosView();
         asignarValorElementos(empresa);
 
@@ -44,6 +44,6 @@ EditText etTelefonos;
         tvWeb.setText(empresa.getWebEmpresa());
         tvMail.setText(empresa.getMailContact());
         etlocalizacion.setText(empresa.getLocalizacion());
-        etTelefonos.setText(empresa.getTelefonoContacto());
+        etTelefonos.setText(String.valueOf(empresa.getTelefonoContacto()));
     }
 }

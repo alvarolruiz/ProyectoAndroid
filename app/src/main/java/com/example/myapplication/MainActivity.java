@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void clickListViewElement(AdapterView<?> adapterView, View view, int pos, long id) {
         if(listaEmpresas.get(pos) instanceof EmpresaTecnologica) {
-            Intent i = new Intent(MainActivity.this, DetallesEmpresa.class);
+            Intent i = new Intent(this, DetallesEmpresa.class);
             i.putExtra("Empresa",(EmpresaTecnologica) listaEmpresas.get(pos));
             startActivity(i);
         }
