@@ -82,6 +82,7 @@ public class EmpresaTecnologica extends Empresa implements Parcelable {
         parcel.writeString(webEmpresa);
         parcel.writeString(localizacion);
         parcel.writeString(mailContact);
+        parcel.writeInt(telefonoContacto);
     }
 
 
