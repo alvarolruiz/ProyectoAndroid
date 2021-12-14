@@ -8,12 +8,14 @@ public class EmpresaTecnologica extends Empresa implements Parcelable {
     private String webEmpresa;
     private String localizacion;
     private String mailContact;
+    private int telefonoContacto;
 
-    public EmpresaTecnologica(int logo, String nombreEmpresa, String webEmpresa, String localizacion, String mailContact) {
+    public EmpresaTecnologica(int logo, String nombreEmpresa, String webEmpresa, String localizacion, String mailContact, int telefonoContacto) {
         super(logo, nombreEmpresa);
         this.webEmpresa = webEmpresa;
         this.localizacion = localizacion;
         this.mailContact = mailContact;
+        this.telefonoContacto = telefonoContacto;
     }
 
     protected EmpresaTecnologica(Parcel in) {
@@ -22,6 +24,7 @@ public class EmpresaTecnologica extends Empresa implements Parcelable {
         webEmpresa = in.readString();
         localizacion = in.readString();
         mailContact = in.readString();
+        telefonoContacto = in.readInt();
     }
 
     public static final Creator<EmpresaTecnologica> CREATOR = new Creator<EmpresaTecnologica>() {
@@ -60,6 +63,13 @@ public class EmpresaTecnologica extends Empresa implements Parcelable {
         this.mailContact = mailContact;
     }
 
+    public int getTelefonoContacto() {
+        return telefonoContacto;
+    }
+
+    public void setTelefonoContacto(int telefonoContacto) {
+        this.telefonoContacto = telefonoContacto;
+    }
     @Override
     public int describeContents() {
         return 0;
@@ -73,4 +83,6 @@ public class EmpresaTecnologica extends Empresa implements Parcelable {
         parcel.writeString(localizacion);
         parcel.writeString(mailContact);
     }
+
+
 }

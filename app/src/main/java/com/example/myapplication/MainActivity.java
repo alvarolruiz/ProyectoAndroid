@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Empresa> getListaEmpresas() {
         ArrayList<Empresa> listaEmpresas = new ArrayList();
-        listaEmpresas.add(new EmpresaTecnologica(R.drawable.mediamarkt_logo, "Media Markt", "https://www.mediamarkt.es/", "Av. de Palmas Altas, S/N, 41014 Sevilla", "mediamarke@gmail.es"));
+        listaEmpresas.add(new EmpresaTecnologica(R.drawable.mediamarkt_logo, "Media Markt", "https://www.mediamarkt.es/", "Av. de Palmas Altas, S/N, 41014 Sevilla", "mediamarke@gmail.es", 999882233));
         listaEmpresas.add(new EmpresaNoTecnologica(R.drawable.mercadona_logo, "Mercadona", "Alimentación", 4711));
         listaEmpresas.add(new EmpresaNoTecnologica(R.drawable.dia_logo, "Dia", "Alimentacion", 4711));
         listaEmpresas.add(new EmpresaNoTecnologica(R.drawable.decathlon_logo, "Decathlon", "Deportes", 4764));
-        listaEmpresas.add(new EmpresaTecnologica(R.drawable.pc_componentes_logo, "Pc Componentes", "https://www.pccomponentes.com/", "C. de Cavanilles, 35, 28007 Madrid", "pcComponentes@gmail.com"));
+        listaEmpresas.add(new EmpresaTecnologica(R.drawable.pc_componentes_logo, "Pc Componentes", "https://www.pccomponentes.com/", "C. de Cavanilles, 35, 28007 Madrid", "pcComponentes@gmail.com",933778866));
         return listaEmpresas;
     }
 }

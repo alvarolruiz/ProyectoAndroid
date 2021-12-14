@@ -6,4 +6,135 @@
     android:layout_height="match_parent"
     tools:context="DetallesEmpresa">
 
+    <ImageView
+        android:id="@+id/ivLogoDetails"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre empresa: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoDetails" />
+
+    <TextView
+        android:id="@+id/tvNombreDetails"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/idNombre"
+        app:layout_constraintTop_toTopOf="@+id/idNombre" />
+
+    <TextView
+        android:id="@+id/idWeb"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Web: "
+        app:layout_constraintEnd_toEndOf="@+id/idNombre"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idNombre" />
+
+    <TextView
+        android:id="@+id/tvWebDetails"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/idWeb"
+        app:layout_constraintTop_toTopOf="@+id/idWeb" />
+
+    <TextView
+        android:id="@+id/idMail"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mail: "
+        app:layout_constraintEnd_toEndOf="@+id/idWeb"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idWeb" />
+
+    <TextView
+        android:id="@+id/tvMailDetails"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/idMail"
+        app:layout_constraintTop_toTopOf="@+id/idMail" />
+
+    <TextView
+        android:id="@+id/idContacto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Contacto"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivLogoDetails"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idMail" />
+
+    <TextView
+        android:id="@+id/idLocalizacion"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Localizacion: "
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idContacto" />
+
+    <EditText
+        android:id="@+id/tvLocalizacionDetails"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/idLocalizacion"
+        app:layout_constraintTop_toBottomOf="@+id/idContacto" />
+
+    <TextView
+        android:id="@+id/idTelefonos"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Telefonos: "
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idLocalizacion" />
+
+    <EditText
+        android:id="@+id/etTelefonosDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idTelefonos" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Personas de contacto"
+        app:layout_constraintEnd_toEndOf="@+id/ivLogoDetails"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/etTelefonosDetails" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
