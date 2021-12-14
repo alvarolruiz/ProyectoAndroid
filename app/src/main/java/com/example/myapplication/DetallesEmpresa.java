@@ -23,7 +23,7 @@ EditText etTelefonos;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detalles_empresa);
         Intent i = getIntent();
-            EmpresaTecnologica empresa =(EmpresaTecnologica) i.getParcelableExtra("Empresa");
+        EmpresaTecnologica empresa =(EmpresaTecnologica) i.getParcelableExtra("Empresa");
         declararElementosView();
         asignarValorElementos(empresa);
 

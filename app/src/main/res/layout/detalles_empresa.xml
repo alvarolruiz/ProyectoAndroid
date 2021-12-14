@@ -9,23 +9,22 @@
 
     <ImageView
         android:id="@+id/ivLogoDetails"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:src="@drawable/mercadona_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <ImageView
         android:id="@+id/idNombre"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Nombre empresa: "
-        android:textColor="#009688"
-        android:textSize="16sp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/company_icon"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toBottomOf="@+id/ivLogoDetails" />
 
@@ -36,17 +35,16 @@
         android:layout_marginStart="8dp"
         android:textColor="#000000"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/idNombre"
         app:layout_constraintStart_toEndOf="@+id/idNombre"
         app:layout_constraintTop_toTopOf="@+id/idNombre" />
 
-    <TextView
+    <ImageView
         android:id="@+id/idWeb"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Web: "
-        android:textColor="#009688"
-        android:textSize="16sp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icon_web"
         app:layout_constraintEnd_toEndOf="@+id/idNombre"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toBottomOf="@+id/idNombre" />
@@ -56,19 +54,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:textSize="16sp"
         android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/idWeb"
         app:layout_constraintStart_toEndOf="@+id/idWeb"
         app:layout_constraintTop_toTopOf="@+id/idWeb" />
 
-    <TextView
+    <ImageView
         android:id="@+id/idMail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Mail: "
-        android:textColor="#009688"
-        android:textSize="16sp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/email_icon"
         app:layout_constraintEnd_toEndOf="@+id/idWeb"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toBottomOf="@+id/idWeb" />
@@ -78,8 +75,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:textColor="@color/black"
         android:textSize="16sp"
-        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/idMail"
         app:layout_constraintStart_toEndOf="@+id/idMail"
         app:layout_constraintTop_toTopOf="@+id/idMail" />
 
@@ -87,22 +85,20 @@
         android:id="@+id/idContacto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Contacto"
-        android:textColor=""
+        android:textColor="@color/turquesa"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/ivLogoDetails"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toBottomOf="@+id/idMail" />
 
-    <TextView
+    <ImageView
         android:id="@+id/idLocalizacion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Localizacion: "
-        android:textColor="#009688"
-        android:textSize="16sp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/location_icon"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toBottomOf="@+id/idContacto" />
 
@@ -110,40 +106,38 @@
         android:id="@+id/tvLocalizacionDetails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
         android:textSize="16sp"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/idLocalizacion"
-        app:layout_constraintTop_toBottomOf="@+id/idLocalizacion" />
+        app:layout_constraintBottom_toBottomOf="@+id/idLocalizacion"
+        app:layout_constraintStart_toEndOf="@+id/idLocalizacion"
+        app:layout_constraintTop_toTopOf="@+id/idLocalizacion" />
 
-    <TextView
+    <ImageView
         android:id="@+id/idTelefonos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Telefonos: "
-        android:textColor="#009688"
-        android:textSize="16sp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/telefono_icon"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocalizacionDetails" />
+        app:layout_constraintTop_toBottomOf="@+id/idLocalizacion" />
 
     <EditText
         android:id="@+id/etTelefonosDetails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
         android:inputType="number"
-        android:textSize="16sp"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/idTelefonos" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/idTelefonos"
+        app:layout_constraintStart_toEndOf="@+id/idTelefonos"
+        app:layout_constraintTop_toTopOf="@+id/idTelefonos" />
 
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:text="Personas de contacto"
         app:layout_constraintEnd_toEndOf="@+id/ivLogoDetails"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
