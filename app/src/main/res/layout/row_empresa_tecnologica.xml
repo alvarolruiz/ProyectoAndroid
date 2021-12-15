@@ -7,57 +7,100 @@
 
     <ImageView
         android:id="@+id/ivLogoDetails"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <TextView
-        android:id="@+id/tvNombreDetails"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/idNombre"
+        android:textSize="15dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        android:src="@drawable/company_icon"
         app:layout_constraintStart_toEndOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toTopOf="@+id/ivLogoDetails" />
 
+    <TextView
+        android:id="@+id/tvNombreET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idNombre"
+        app:layout_constraintTop_toTopOf="@+id/idNombre" />
+
+
+    <ImageView
+        android:id="@+id/idLocalizacion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/location_icon"
+        app:layout_constraintStart_toEndOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idNombre" />
 
     <TextView
         android:id="@+id/tvLocalizacionET"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idLocalizacion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombreDetails" />
+        app:layout_constraintStart_toEndOf="@+id/idLocalizacion"
+        app:layout_constraintTop_toTopOf="@+id/idLocalizacion" />
 
+
+    <ImageView
+        android:id="@+id/idMail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/email_icon"
+        app:layout_constraintStart_toEndOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/idLocalizacion" />
 
     <TextView
-        android:id="@+id/tvMailDetails"
+        android:id="@+id/tvMailET"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idMail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocalizacionET" />
+        app:layout_constraintStart_toEndOf="@+id/idMail"
+        app:layout_constraintTop_toTopOf="@+id/idMail" />
 
+
+    <ImageView
+        android:id="@+id/idWeb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_web"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoDetails" />
 
     <TextView
         android:id="@+id/tvWebDetails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idWeb"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogoDetails" />
+        app:layout_constraintStart_toEndOf="@+id/idWeb"
+        app:layout_constraintTop_toTopOf="@+id/idWeb" />
 </androidx.constraintlayout.widget.ConstraintLayout>

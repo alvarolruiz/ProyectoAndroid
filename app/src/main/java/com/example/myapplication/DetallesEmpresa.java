@@ -31,9 +31,9 @@ EditText etTelefonos;
 
     private void declararElementosView(){
         ivLogo = findViewById(R.id.ivLogoDetails);
-        tvNombre = findViewById(R.id.tvNombreDetails);
+        tvNombre = findViewById(R.id.tvNombreET);
         tvWeb = findViewById(R.id.tvWebDetails);
-        tvMail = findViewById(R.id.tvMailDetails);
+        tvMail = findViewById(R.id.tvMailET);
         etlocalizacion = findViewById(R.id.tvLocalizacionDetails);
         etTelefonos = findViewById(R.id.etTelefonosDetails);
     }

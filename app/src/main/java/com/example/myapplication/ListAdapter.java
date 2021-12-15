@@ -69,9 +69,9 @@ public class ListAdapter extends BaseAdapter {
             if(row==null) {
                 row = inflarRowEmpresaTecnologica(row, inflater, parent);
                 ivLogo = row.findViewById(R.id.ivLogoDetails);
-                tvNombre = row.findViewById(R.id.tvNombreDetails);
+                tvNombre = row.findViewById(R.id.tvNombreET);
                 tvUbicacion = row.findViewById(R.id.tvLocalizacionET);
-                tvMail = row.findViewById(R.id.tvMailDetails);
+                tvMail = row.findViewById(R.id.tvMailET);
                 tvWeb = row.findViewById(R.id.tvWebDetails);
                 holderEmpTecnologica=new ViewHolder_EmpresaTecnologica(ivLogo,tvNombre,tvUbicacion,tvMail,tvWeb);
                 row.setTag(holderEmpTecnologica);

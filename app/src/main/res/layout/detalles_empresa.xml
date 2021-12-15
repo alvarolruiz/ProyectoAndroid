@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivLogoDetails" />
 
     <TextView
-        android:id="@+id/tvNombreDetails"
+        android:id="@+id/tvNombreET"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/idWeb" />
 
     <TextView
-        android:id="@+id/tvMailDetails"
+        android:id="@+id/tvMailET"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
