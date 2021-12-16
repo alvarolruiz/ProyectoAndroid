@@ -9,46 +9,62 @@
         android:id="@+id/ivLogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvNombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toEndOf="@+id/ivLogo"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#009688"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivLogo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivLogo" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad empresa: "
+        app:layout_constraintBottom_toBottomOf="@+id/tvActividadEmpresa"
+        app:layout_constraintStart_toStartOf="@+id/tvNombre"
+        app:layout_constraintTop_toTopOf="@+id/tvActividadEmpresa" />
 
     <TextView
         android:id="@+id/tvActividadEmpresa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
         android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/tvCNAE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivLogo"
+        app:layout_constraintEnd_toStartOf="@+id/ivLogo"
+        app:layout_constraintStart_toEndOf="@+id/id"
         app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+    <TextView
+        android:id="@+id/idCNAE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CNAE: "
+        app:layout_constraintBottom_toBottomOf="@+id/tvCNAE"
+        app:layout_constraintEnd_toEndOf="@+id/id"
+        app:layout_constraintTop_toTopOf="@+id/tvCNAE" />
 
     <TextView
         android:id="@+id/tvCNAE"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/ivLogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivLogo" />
+        app:layout_constraintEnd_toStartOf="@+id/ivLogo"
+        app:layout_constraintStart_toEndOf="@+id/idCNAE" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

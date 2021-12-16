@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".DetallesEmpresa"
+            android:name=".PersonasContacto"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="Vistas.DetallesEmpresa"
+            android:exported="false" />
+        <activity
+            android:name="Vistas.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

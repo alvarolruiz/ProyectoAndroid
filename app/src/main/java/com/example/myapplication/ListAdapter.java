@@ -68,11 +68,11 @@ public class ListAdapter extends BaseAdapter {
         if(getItemViewType(i)==1){
             if(row==null) {
                 row = inflarRowEmpresaTecnologica(row, inflater, parent);
-                ivLogo = row.findViewById(R.id.ivLogoDetails);
+                ivLogo = row.findViewById(R.id.ivLogoET);
                 tvNombre = row.findViewById(R.id.tvNombreET);
                 tvUbicacion = row.findViewById(R.id.tvLocalizacionET);
                 tvMail = row.findViewById(R.id.tvMailET);
-                tvWeb = row.findViewById(R.id.tvWebDetails);
+                tvWeb = row.findViewById(R.id.tvWebET);
                 holderEmpTecnologica=new ViewHolder_EmpresaTecnologica(ivLogo,tvNombre,tvUbicacion,tvMail,tvWeb);
                 row.setTag(holderEmpTecnologica);
             }else{
@@ -87,7 +87,7 @@ public class ListAdapter extends BaseAdapter {
             if(row==null){
                 row = inflarRowEmpresaNoTecnologica(row, inflater,parent);
                 ivLogo = row.findViewById(R.id.ivLogo);
-                tvNombre=row.findViewById(R.id.tvActividadEmpresa);
+                tvNombre=row.findViewById(R.id.tvNombre);
                 tvActividadEmpresa = row.findViewById(R.id.tvActividadEmpresa);
                 tvCNAE = row.findViewById(R.id.tvCNAE);
                 holderEmpNoTecnologica = new ViewHolder_EmpresaNoTecnologica(ivLogo,tvNombre,tvActividadEmpresa,tvCNAE);

@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:alwaysDrawnWithCache="false"
-    tools:context="DetallesEmpresa">
+    android:backgroundTintMode="src_over"
+    tools:context="Vistas.DetallesEmpresa">
 
     <ImageView
         android:id="@+id/ivLogoDetails"
         android:layout_width="200dp"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/mercadona_logo"
@@ -23,13 +24,14 @@
         android:id="@+id/idNombre"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:background="#48009688"
         android:src="@drawable/company_icon"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toBottomOf="@+id/ivLogoDetails" />
 
     <TextView
-        android:id="@+id/tvNombreET"
+        android:id="@+id/tvNombreDetails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -39,11 +41,14 @@
         app:layout_constraintStart_toEndOf="@+id/idNombre"
         app:layout_constraintTop_toTopOf="@+id/idNombre" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/idWeb"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="#48009688"
+        android:backgroundTintMode="multiply"
+        android:scaleType="centerInside"
         android:src="@drawable/icon_web"
         app:layout_constraintEnd_toEndOf="@+id/idNombre"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
@@ -60,18 +65,20 @@
         app:layout_constraintStart_toEndOf="@+id/idWeb"
         app:layout_constraintTop_toTopOf="@+id/idWeb" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/idMail"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="#48009688"
+        android:scaleType="centerInside"
         android:src="@drawable/email_icon"
-        app:layout_constraintEnd_toEndOf="@+id/idWeb"
-        app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/idWeb" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idContacto" />
 
     <TextView
-        android:id="@+id/tvMailET"
+        android:id="@+id/tvMailDetails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -91,16 +98,18 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/ivLogoDetails"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/idMail" />
+        app:layout_constraintTop_toBottomOf="@+id/idWeb" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/idLocalizacion"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="#48009688"
+        android:scaleType="centerInside"
         android:src="@drawable/location_icon"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
-        app:layout_constraintTop_toBottomOf="@+id/idContacto" />
+        app:layout_constraintTop_toBottomOf="@+id/idMail" />
 
     <EditText
         android:id="@+id/tvLocalizacionDetails"
@@ -115,9 +124,10 @@
 
     <ImageView
         android:id="@+id/idTelefonos"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
+        android:background="#48009688"
         android:src="@drawable/telefono_icon"
         app:layout_constraintStart_toStartOf="@+id/ivLogoDetails"
         app:layout_constraintTop_toBottomOf="@+id/idLocalizacion" />
@@ -135,6 +145,7 @@
         app:layout_constraintTop_toTopOf="@+id/idTelefonos" />
 
     <Button
+        android:id="@+id/btnContacto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"

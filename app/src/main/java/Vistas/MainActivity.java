@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package Vistas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,12 +8,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.myapplication.ListAdapter;
+import com.example.myapplication.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import Entidades.Empresa;
 import Entidades.EmpresaNoTecnologica;
 import Entidades.EmpresaTecnologica;
+import Vistas.DetallesEmpresa;
 
 public class MainActivity extends AppCompatActivity {
     ListView lv;
