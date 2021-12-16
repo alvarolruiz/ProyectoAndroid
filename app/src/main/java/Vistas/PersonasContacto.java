@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package Vistas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.example.myapplication.R;
+import com.example.myapplication.SpinnerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
